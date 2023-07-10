@@ -1,0 +1,12 @@
+dist/ 
+build/ 
+.vscode/ 
+*.egg-info/
+*.log
+__pycache__
+/healthy_patients/cleanPatients.py
+/HD_patients/data/cleanPatients.py
+/healthy_patients/patients_csv
+/HD_patients/patients_csv_HD
+/healthy_patients/patients.npy
+/HD_patients/patientsHD.npy
