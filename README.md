@@ -17,9 +17,9 @@ by **Kamil Wołos** and **Jan Poleszczuk**
     >>> pkg_resources.require("PythonPWAExtension")[0].version
     ```
     You should receive message: `0.9.6`.
-7. Additionaly you change number of threads in `omp_set_num_threads` in the file `PythonPWAExtension_library` &rarr; `SolverSpeed` &rarr; `C++ source code` &rarr; `PythonPWAspeed.cpp` (if needed). 
+7. Additionaly you can change number of threads in `omp_set_num_threads` in the file `PythonPWAExtension_library` &rarr; `SolverSpeed` &rarr; `C++ source code` &rarr; `PythonPWAspeed.cpp` (if needed). 
 
 ## Using the wrapper
-1. Get the data to fit from .... Paste `patients_csv_HD` into folder `HD_patients` and `patients_csv` into folder `healthy_patients`.  
+1. Get the data to fit from [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.8131393.svg)](https://doi.org/10.5281/zenodo.8131393).  Paste `patients_csv_HD` into folder `HD_patients` and `patients_csv` into folder `healthy_patients`.  
 2. Change `.csv` files into numpy dict which is readable to the script, by running command `python3 csv_to_disct.py`. You should receive `patients.npy` or `patientsHD.npy` in the working directory. 
 3. In the `healthy_patients` and `HD_patients` you can find file `script.sh`. Make this file executable, using command `chmod +x script.sh`. To start fitting data to the patients use command `./script.sh`. 
